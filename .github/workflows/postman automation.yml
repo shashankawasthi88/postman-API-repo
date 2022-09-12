@@ -20,6 +20,7 @@ jobs:
         run: postman login --with-api-key PMAK-631ef70dc9bab0003c5cf312-7db4453acc9f884f3a2340426c3241cb20
       - name: Run API tests
         run: |
+          echo ${GITHUB_ACTION_PATH}
           export POSTMAN_API_BASE_URL='https://api.getpostman-stage.com'
           postman collection run "${GITHUB_ACTION_PATH}/postman/collections/Postman API reference.json" --integration-id "127168-${GITHUB_JOB}"
           # Run your API using Postman CLI
