@@ -7313,6 +7313,33 @@
 			"id": "5cdeef19-7aa7-47a9-af9c-7c106fe23c09"
 		},
 		{
+			"name": "integrations",
+			"item": [
+				{
+					"name": "get all integrations",
+					"id": "ec0df80f-375f-4795-b69d-11e41a531d8b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/integrations",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"integrations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b82ccbab-c1b7-482a-a69c-c2a123581f68"
+		},
+		{
 			"name": "API Key Owner",
 			"id": "e2d40ab4-e495-430e-9978-37ede89c8f8c",
 			"protocolProfileBehavior": {
